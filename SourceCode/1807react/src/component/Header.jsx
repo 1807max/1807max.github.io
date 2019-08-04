@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import "./index.scss"
+import "./HomePage/index.scss"
 import { BrowserRouter, Route, Redirect, NavLink } from "react-router-dom"
-import Context from "./Context"
+import axios from "axios"
+import Context from "./HomePage/Context"
 const navlist = [
     {
         id: 1,
@@ -25,6 +26,11 @@ export default class Html extends Component {
         this.state = {
             isShow: false
         }
+    }
+    componentDidMount() {
+        axios.post("./HomePage.json").then(res => {
+            console.log(res)
+        })
     }
     onHandleShow = () => {
         this.setState({

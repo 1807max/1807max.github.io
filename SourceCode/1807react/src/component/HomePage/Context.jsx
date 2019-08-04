@@ -9,7 +9,6 @@ export default class Home extends Component {
     render() {
         return (
             <React.Fragment>
-
                 <div className="HP-Context">
                     <p className="HP-C-Header">LOFTER元气客服酱</p>
                     <p className="HP-C-Title">小嘤回忆之---西北甘肃自驾游</p>
