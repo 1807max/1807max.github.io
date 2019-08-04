@@ -1,0 +1,61 @@
+.HomePage{
+    height: 200vw;
+    background: url("./img/bg.png");
+    padding: 25px 25px 0;
+    .HP-Top{
+        display: flex;
+        justify-content: space-between;
+        .HP-T-Left{
+            height: 100px;
+            width: 50vw;
+            background: url("./img/logo.png");
+            background-size:100%;
+            background-position: 0 -200px;
+            background-repeat: no-repeat;
+        }
+        .HP-T-Right{
+            width: 38vw;
+            height: 60px;
+            background: #E6E6E6;
+            border: #A1A4A5;
+            padding-left: 10px;
+            margin-top: 20px;
+            border: 1px solid #B6B8B9;
+            border-radius: 8px;
+            .HP-T-R-Show{
+                color: #444;
+                display: flex;
+                justify-content: space-between;
+                .HP-T-R-S-delta{
+                    color: #444;
+                    border-left: 1px solid #C9C7C5;
+                    line-height: 60px;
+                    height: 60px;
+                    text-align: center;
+                    width: 70px;
+                    font-size: 30px;
+                }
+            }
+            .HP-T-R-navlist{
+                text-decoration: none;
+                color: #444;
+                font-size: 60px;
+                display: block;
+            }
+            .HP-T-R-navlist1{
+                color: white;
+                background: skyblue;
+            }
+            .HP-T-R-route{
+                font-size: 40px;
+            }
+            .HP-T-R-Bottom{
+                width: 50vw;
+                position: relative;
+                left: -90px;
+                border: 1px solid #C7A055;
+                background: white;
+            }
+        }
+    }
+}
