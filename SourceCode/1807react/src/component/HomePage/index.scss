@@ -1,10 +1,10 @@
 .HomePage{
-    height: 200vw;
     background: url("./img/bg.png");
     padding: 25px 25px 0;
     .HP-Top{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
         .HP-T-Left{
             height: 100px;
             width: 50vw;
@@ -56,6 +56,62 @@
                 border: 1px solid #C7A055;
                 background: white;
             }
+        }
+    }
+    .HP-Context{
+        background: #F0F0F0;
+        border-radius: 5px;
+        padding: 30px;
+        .HP-C-Header{
+            margin: 0;
+            font-size: 40px;
+            color: #83929d;
+            margin-bottom: 10px;
+        }
+        .HP-C-Title{
+            margin: 0;
+            font-size: 45px;
+
+        }
+        .HP-C-Context{
+            font-size: 40px;
+            margin: 0;
+            color: #444;
+        }
+    }
+}
+.HP-Bottom{
+    position: fixed;
+    bottom: 0px;
+    height: 110px;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    div{
+        width: 100%;
+        height: 100%;
+        background: url(./img/bottomdown.png);
+        background-size: 100%;
+        position: relative;
+        span{
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 55px;
+            left: 130px;
+        }
+        .HP-B-Down{
+            font-size: 35px;
+            text-align: center;
+            width: 200px;
+            height: 70px;
+            line-height: 70px;
+            color: white;
+            background: #9AC600;
+            border: 1px solid #90B706;
+            border-radius: 10px;
+            position: absolute;
+            right: 20px;
+            top: 15px;
         }
     }
 }

@@ -1,0 +1,19 @@
+{
+    "Navlink": [
+        {
+            "id": 1,
+            "url": "/home",
+            "name": "LOFTER首页"
+        },
+        {
+            "id": 2,
+            "url": "/release",
+            "name": "发布文章"
+        },
+        {
+            "id": 3,
+            "url": "/like",
+            "name": "喜欢的文章"
+        }
+    ]
+}
