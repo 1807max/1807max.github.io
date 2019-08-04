@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import "./HomePage/index.scss"
 import { BrowserRouter, Route, Redirect, NavLink } from "react-router-dom"
+<<<<<<< HEAD:SourceCode/1807react/src/component/HomePage/Header.jsx
+import Context from "./Context"
+import Release from './release'
+=======
 import axios from "axios"
 import Context from "./HomePage/Context"
 import LikeMsg from "./LikeMsg"
+>>>>>>> 898791cb252891017e3d2e10af881ba0383ed365:SourceCode/1807react/src/component/Header.jsx
 const navlist = [
     {
         id: 1,
@@ -89,11 +94,16 @@ export default class Html extends Component {
                             onHandleNone={this.onHandleNone}
                             onHandleShow={this.onHandleShow} />
                     }} />
+<<<<<<< HEAD:SourceCode/1807react/src/component/HomePage/Header.jsx
+                    <Route path="/release" component={(props) => {
+                        return <Release />
+=======
                     <Route path="/like" component={(props) => {
                         return <LikeMsg {...props}
                             isShow={this.state.isShow}
                             onHandleNone={this.onHandleNone}
                             onHandleShow={this.onHandleShow} />
+>>>>>>> 898791cb252891017e3d2e10af881ba0383ed365:SourceCode/1807react/src/component/Header.jsx
                     }} />
                 </div>
                 <div className="HP-Bottom">

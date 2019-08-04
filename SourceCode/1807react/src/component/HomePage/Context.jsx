@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Route, Redirect } from "react-router-dom"
-
+// import { NavLink,Route,Redirect} from "react-router-dom"
 export default class Home extends Component {
     constructor(props) {
         super(props)

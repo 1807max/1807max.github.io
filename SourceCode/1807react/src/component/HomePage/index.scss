@@ -115,6 +115,61 @@
         }
     }
 }
+<<<<<<< HEAD
+.HP-Release{
+    background: #F0F0F0;
+    border-radius: 5px;
+    padding: 30px;
+    .Release-inp1{
+        width: 518px;
+        height: 68px;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    .Release-inp2{
+        width: 518px;
+        height: 228px;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    .Release-wz{
+        position: relative;
+        padding: 0 0 0 30px;
+        margin: 0 0 34px;
+        line-height: 40px;
+        .Release-wz-one{
+            color: #bbb;
+            line-height: 0.6rem;
+            height: 0.6rem;
+            text-align: center;
+            width: 0.7rem;
+            font-size: 0.3rem;
+        }
+        .s-fc4{
+            font-size: 10px;
+            margin: 0;
+            margin-left: 70px;
+            margin-top: -60px;
+        }
+        p{
+            font-size: 10px;
+            margin: 0;
+            margin-left: 70px;
+        }
+    }
+    .Release-btn{
+        width: 170px;
+        height: 70px;
+        line-height: 70px;
+        border: 0;
+        text-align: center;
+        font-size: 40px;
+        color: #ecf9fa;
+        background: #9AC600;
+        margin-left: 50px;
+=======
 // 喜欢的文章的样式
 .likemsg{
     width: 100%;
@@ -141,5 +196,6 @@
             text-decoration: none;
         }
         
+>>>>>>> 898791cb252891017e3d2e10af881ba0383ed365
     }
 }
