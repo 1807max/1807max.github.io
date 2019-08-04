@@ -3,6 +3,24 @@ import "./HomePage/index.scss"
 import { BrowserRouter, Route, Redirect, NavLink } from "react-router-dom"
 import axios from "axios"
 import Context from "./HomePage/Context"
+import LikeMsg from "./LikeMsg"
+const navlist = [
+    {
+        id: 1,
+        url: "/home",
+        name: "LOFTER首页"
+    },
+    {
+        id: 2,
+        url: "/release",
+        name: "发布文章"
+    },
+    {
+        id: 3,
+        url: "/like",
+        name: "喜欢的文章"
+    }
+]
 export default class Html extends Component {
     constructor(props) {
         super(props)
@@ -30,7 +48,7 @@ export default class Html extends Component {
         const { isShow } = this.state
         return (
             <BrowserRouter>
-                {/* <div className="HomePage">
+                <div className="HomePage">
                     <div className="HP-Top">
                         <div className="HP-T-Left"></div>
                         <div className="HP-T-Right">
@@ -71,13 +89,19 @@ export default class Html extends Component {
                             onHandleNone={this.onHandleNone}
                             onHandleShow={this.onHandleShow} />
                     }} />
+                    <Route path="/like" component={(props) => {
+                        return <LikeMsg {...props}
+                            isShow={this.state.isShow}
+                            onHandleNone={this.onHandleNone}
+                            onHandleShow={this.onHandleShow} />
+                    }} />
                 </div>
                 <div className="HP-Bottom">
                     <div>
                         <span>打开APP发现更多精彩</span>
                         <div className="HP-B-Down">立即下载</div>
                     </div>
-                </div> */}
+                </div>
             </BrowserRouter>
 
         )
