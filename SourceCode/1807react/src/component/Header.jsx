@@ -3,6 +3,7 @@ import "./HomePage/index.scss"
 import { BrowserRouter, Route, Redirect, NavLink } from "react-router-dom"
 import axios from "axios"
 import Context from "./HomePage/Context"
+import LikeMsg from "./LikeMsg"
 const navlist = [
     {
         id: 1,
@@ -83,6 +84,12 @@ export default class Html extends Component {
                     </div>
                     <Route path="/home" component={(props) => {
                         return <Context {...props}
+                            isShow={this.state.isShow}
+                            onHandleNone={this.onHandleNone}
+                            onHandleShow={this.onHandleShow} />
+                    }} />
+                    <Route path="/like" component={(props) => {
+                        return <LikeMsg {...props}
                             isShow={this.state.isShow}
                             onHandleNone={this.onHandleNone}
                             onHandleShow={this.onHandleShow} />
