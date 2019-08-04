@@ -1,0 +1,55 @@
+.zd-from{
+    .top{
+        width: 100%;
+        border-bottom: 1px gray solid;
+        .img{
+            display: flex;
+            height: 110px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 230px;
+                height: 55px;
+            }
+            
+        }
+        .router{
+            display: flex;
+            justify-content: center;
+            a{
+                text-align: center;
+                width: 125px;
+                height: 40px;
+                font-size: 20px;
+                color: black;
+                &.active{
+                    border-bottom: 2px green solid;
+                }
+            }
+            
+        }
+    }
+    .main{
+        width: 100%;
+        height: 375px;
+        box-sizing: border-box;
+        padding: 20px 40px;
+        .register{
+            width: 100%;
+            border-radius: 25px;
+        }
+    }
+    .footer{
+        width: 100%;
+        .title{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .box{
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
