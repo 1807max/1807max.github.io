@@ -3,6 +3,7 @@ import './index.scss'
 import { Icon } from 'antd';
 import Fromitem from './Fromitem'
 import Fromlogin from './Fromlogin'
+// import App from '../../component/Header';
 import {NavLink,Switch,Route,Redirect} from 'react-router-dom'
 export default class From extends Component {
     render() {
@@ -14,15 +15,15 @@ export default class From extends Component {
                     </div>
                     
                     <div className="router">
-                        <NavLink to="/login">注册</NavLink>
-                        <NavLink to="/register">登录</NavLink>
+                        <NavLink to="/from/login">注册</NavLink>
+                        <NavLink to="/from/register">登录</NavLink>
                     </div>
                 </div>
                 <div className="main">
                 <Switch>
-                    <Route path="/login" component = {Fromitem}/>
-                    <Route path="/register" component = {Fromlogin}/>
-                    <Redirect to="/login" />
+                    <Route path="/from/login" component = {Fromitem}/>
+                    <Route path="/from/register" component = {Fromlogin}/>
+                    <Redirect to="/from/login" />
                 </Switch>
                 </div>
                 <div className="footer">

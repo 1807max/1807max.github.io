@@ -15,7 +15,7 @@ class NormalLoginForm extends React.Component {
         }else{
           alert('注册成功')
           // 路由跳转
-          this.props.history.replace('/register')
+          this.props.history.replace('/from/register')
         }
       }
     });

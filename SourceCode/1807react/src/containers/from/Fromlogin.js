@@ -14,6 +14,7 @@ class NormalLoginForm extends React.Component {
         }else{
           alert('用户输入成功')
           // 路由跳转
+          this.props.history.replace('/home')
         }
       }
     });
